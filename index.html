@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Roulette.js Demo</title>
+		<title>Phasmophobia Gamemode Roulette</title>
 		<link rel="stylesheet" href="bootstrap.css"></link>
 		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/themes/ui-lightness/jquery-ui.css">
 		<link rel="stylesheet" href="bootstrap-responsive.css"></link>
@@ -10,87 +10,83 @@
 		<link rel="stylesheet" href="demo.css"></link>
 	</head>
 	<body>
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</a>
-					<a class="brand" href="./">Roulette.js</a>
-					<div class="nav-collapse collapse" id="main-menu">
-						<ul class="nav pull-right" id="main-menu-right">
-							<li><a rel="tooltip" target="_blank" href="https://github.com/akira-kuriyama/roulette.js" >Github<i class="icon-share-alt"></i></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
-			<div class="page-header" style="">
-				<h1>
-					Roulette.js DEMO
-				</h1>
-			</div>
-
-			<div class="row">
-				<div class="span4">
-					<div class="roulette_container" >
-						<div class="roulette" style="display:none;">
-							<img src="star.png"/>
-							<img src="flower.png"/>
-							<img src="coin.png"/>
-							<img src="mshroom.png"/>
-							<img src="chomp.png"/>
-						</div>
-					</div>
-					<div class="btn_container">
-						<p>
-						<button class="btn btn-large btn-primary start"> START </button>
-						<button class="stop btn-large btn btn-warning"> STOP </button>
-						</p>
-					</div>
-					<div class="log_container">
-						<p class="demo_label">Log</p>
-						<div id="msg">
-						</div>
-					</div>
-				</div>
-				<div class="span4">
-					<div class="right_container">
-						<p class="demo_label">Paramater</p>
-						<div class="speed_value param_label">
-							<span class="param_name">speed :</span> <span class="speed_param"></span>
-						</div>
-						<div id="speed"> </div>
-						
-						<div class="duration_value param_label">
-							<span class="param_name">duration :</span> <span class="duration_param"></span>
-						</div>
-						<div id="duration"> </div>
-						
-						<div class="stop_image_number_value param_label">
-							<span class="param_name">stop image number :</span> <span class="stop_image_number_param"></span>
-						</div>
-						<input id="stopImageNumber" name="stopImageNumber"/>
-						<span class="image_sample">
-							<img data-value="0"  src="star.png"/>
-							<img data-value="1"  src="flower.png"/>
-							<img data-value="2"  src="coin.png"/>
-							<img data-value="3"  src="mshroom.png"/>
-							<img data-value="4"  src="chomp.png"/>
-							<img data-value="-1" src="random.png" title="random"/>
-						</span>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.0/jquery-ui.min.js"></script>
-		<script src="../roulette.js"></script>
-		<script src="demo.js"></script>
-
+	<h1>Phasmophobia GAMEMODE ROULETTE!</h1>
+	<p>Click the button and see which gamemode lights up! - These are all intended for professional difficulty.</p>
+	<table style="width: 90%; height: 90%; margin-left: auto; margin-right: auto;" border="2">
+	   <tbody>
+		  <tr>
+			 <td>
+				<h3>Outlast</h3>
+				<p>You're not allowed to use any flashlight but UV. You may only use videocameras to see in the dark.</p>
+			 </td>
+			 <td>
+				<h3>I said SHUT UP</h3>
+				<p>You might only find the ghost by using parabolic microphones.&nbsp;</p>
+			 </td>
+			 <td>
+				<h3>Specialized</h3>
+				<p>The 2 non flashlight items you pick are the only ones you "know" how to use. Don't swap them, except for objective related items like candles or incense.</p>
+			 </td>
+			 <td>
+				<h3>It's Too Cramped!</h3>
+				<p>You're not allowed to hide inside closets during hunts.</p>
+			 </td>
+		  </tr>
+		  <tr>
+			 <td>
+				<h3>Respect Christ</h3>
+				<p>Crucifixes may only be held in your hand. Don't drop them, except for inside the truck.</p>
+			 </td>
+			 <td>
+				<h3>Full Dive</h3>
+				<p>Force the sanity of the entire team to 0%. Do this before any investigative work takes place.</p>
+			 </td>
+			 <td>
+				<h3>Till the End</h3>
+				<p>Whenever a hunt takes place, you must all stick together.</p>
+			 </td>
+			 <td>
+				<h3>Unprepared</h3>
+				<p>No flashlights allowed, Use the buildings's own lights. UVs are allowed, videocameras may only be used when set down.</p>
+			 </td>
+		  </tr>
+		  <tr>
+			 <td>
+				<h3>Let the Neighbors Sleep</h3>
+				<p>No bright flashlights allowed. UV Flashlights are fine.</p>
+			 </td>
+			 <td>
+				<h3>Expensive Equipment</h3>
+				<p>You might only carry stuff in your hands. No droppoing&nbsp;ANYTHING on the ground.</p>
+			 </td>
+			 <td>
+				<h3>In Solitude</h3>
+				<p>Whenever a hunt takes place, players are not allowed to hide together.</p>
+			 </td>
+			 <td>
+				<h3>Benefactor</h3>
+				<p>One person, chosen at random, shall be the sole provider of equipment for the job.</p>
+			 </td>
+		  </tr>
+		  <tr>
+			 <td>
+				<h3>Direct Comms</h3>
+				<p>Do not seek evidence or talk to the ghost until you find the Ouija board. Once found, ask the ghost where it is until it answers. Reroll if no Ouija.</p>
+			 </td>
+			 <td>
+				<h3>One Way</h3>
+				<p>Once you've set foot inside, don't leave the house until investigation and objectives are done.</p>
+			 </td>
+			 <td>
+				<h3>Are you here?</h3>
+				<p>You're only allowed to find the ghost using the spirit box. Only swap it out when it's confirmed the ghost doesn't respond.</p>
+			 </td>
+			 <td>
+				<h3>Squid Game</h3>
+				<p>"Full Dive", "One Way", "In Solitude" and "It's Too Cramped" are in effect until a single person remains alive.</p>
+			 </td>
+		  </tr>
+	   </tbody>
+	</table>
 	</body>
 </html>

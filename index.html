@@ -11,7 +11,9 @@
 	</head>
 	<body>
 	<h1>Phasmophobia GAMEMODE ROULETTE!</h1>
-	<p>Click the button and see which gamemode lights up! - These are all intended for professional difficulty.</p>
+	<p>Click the button and see which gamemode you get! - These are all intended for professional difficulty.</p>
+	<button type="button" onclick="generategm()">Generate!</button>
+	<p id="gamemode"></p>
 	<table style="width: 90%; height: 90%; margin-left: auto; margin-right: auto;" border="2">
 	   <tbody>
 		  <tr>
@@ -20,7 +22,7 @@
 				<p>You're not allowed to use any flashlight but UV. You may only use videocameras to see in the dark.</p>
 			 </td>
 			 <td>
-				<h3>I said SHUT UP</h3>
+				<h3>I Said SHUT UP</h3>
 				<p>You might only find the ghost by using parabolic microphones.&nbsp;</p>
 			 </td>
 			 <td>
@@ -88,5 +90,13 @@
 		  </tr>
 	   </tbody>
 	</table>
+	<script>
+		const gamemodes = ["Outlast", "Respect Christ", "Let the Neighbors Sleep", "Direct Comms", "I Said SHUT UP", "Full Dive", "Expensive Equipment", "One Way", "Specialized", "Till the End", "In Solitude", "Are you here?", "It's Too Cramped", "Unprepared", "Benefactor", "Squid Game"];
+	
+		function generategm() {
+		const random = Math.floor(Math.random() * gamemodes.length);
+		document.getElementById("gamemode").innerHTML = random;
+		}
+	</script>
 	</body>
 </html>
